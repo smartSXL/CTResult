@@ -79,7 +79,7 @@
 
 - (void)menu:(CZMenu *)menu didSelectedIndex:(NSInteger)index
 {
-    self.showLb.text = [NSString stringWithFormat:@"选择了第%ld个",index];
+    self.showLb.text = [NSString stringWithFormat:@"选中了第%ld个",index];
     
     [self menuBtnClick];
 }
