@@ -56,16 +56,19 @@
 - (IBAction)menuBtnClick {
     
     //没有的时候创建
-    if (self.menuView == nil) {
+    if (self.menuView == nil)
+    {
         [self setupMenuView];
     }
     
     CGRect frame = self.menuView.frame;
     
-    if (self.menuView.isShow == NO) {
+    if (self.menuView.isShow == NO)
+    {
         frame.origin.x = 0;
         self.menuView.show = YES;
-    }else{
+    }else
+    {
         frame.origin.x = -frame.size.width;
         self.menuView.show = NO;
     }
@@ -74,7 +77,6 @@
         self.menuView.frame = frame;
         
     }];
-    
 }
 
 - (void)menu:(CZMenu *)menu didSelectedIndex:(NSInteger)index
