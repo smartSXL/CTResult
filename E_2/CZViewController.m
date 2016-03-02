@@ -47,9 +47,9 @@
     frame.origin.x = -frame.size.width;
     
     menuView.frame = frame;
-    
-    [self.view addSubview:menuView];
     self.menuView = menuView;
+    [self.view addSubview:menuView];
+    
 }
 
 
